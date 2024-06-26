@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/user_image" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="31dp"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="12dp"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastName"
+        android:layout_marginTop="10dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_marginTop="10dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="14dp"
+        android:text="City" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city"
+        android:layout_marginTop="6dp"
+        android:text="Country" />
+
+    <Button
+        android:id="@+id/buttonNextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginTop="24dp"
+        android:text="See next user" />
+
+    <Button
+        android:id="@+id/buttonAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNextUser"
+        android:layout_marginTop="11dp"
+        android:text="Add this user to collection" />
+
+    <Button
+        android:id="@+id/buttonViewCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddUser"
+        android:layout_marginTop="13dp"
+        android:text="View collection" />
+
+</RelativeLayout>
